@@ -1,9 +1,3 @@
-import galleryStudents from '../assets/images/gallery-students.jpg';
-import galleryActivity from '../assets/images/gallery-activity.jpg';
-import galleryMoments from '../assets/images/gallery-moments.jpg';
-import galleryComputer from '../assets/images/gallery-computer.jpg';
-import galleryCreativity from '../assets/images/gallery-creativity.jpg';
-import galleryLearners from '../assets/images/gallery-learners.jpg';
 
 export const school = {
   name: 'KIDS ZONE',
@@ -48,21 +42,90 @@ export const classes = [
   { label: 'Class 1 to 8', icon: 'Pencil', bg: 'bg-[#dcf5e6]', text: 'text-[#0b2a7a]' },
 ];
 
-import {
-  getUpcomingIndianEvents,
-  getUpcomingIndianHolidays,
-} from '../services/indianCalendarService.js';
+import { getUpcomingIndianHolidays } from '../services/indianCalendarService.js';
 
-export const events = getUpcomingIndianEvents(3);
-export const holidays = getUpcomingIndianHolidays(3);
+export const notices = [
+  {
+    id: 1,
+    day: '06',
+    month: 'OCT',
+    title: '📢 Admission Open 2026–27',
+    sub: 'Give your child a strong foundation for a brighter future.',
+    tone: 'pink',
+    to: '/admission',
+  },
+  {
+    id: 2,
+    day: '06',
+    month: 'OCT',
+    title: '📚 New Academic Session 2026–27',
+    sub: 'Welcome to a new session of learning, growth, creativity and success.',
+    tone: 'blue',
+    to: '/academics',
+  },
+  {
+    id: 3,
+    day: '06',
+    month: 'OCT',
+    title: '💙 Website Designed & Developed by Earthix',
+    sub: 'Smart digital solutions for modern businesses. Built by Earthix.',
+    tone: 'orange',
+    to: 'https://earthix.in/',
+  },
+];
+
+export const holidays = [
+  {
+    id: 1,
+    day: '20',
+    month: 'OCT',
+    title: 'Dussehra',
+    sub: 'Festival Holiday',
+    tone: 'pink',
+  },
+  {
+    id: 2,
+    day: '08',
+    month: 'NOV',
+    title: 'Diwali',
+    sub: 'Festival Holiday',
+    tone: 'blue',
+  },
+  {
+    id: 3,
+    day: '15',
+    month: 'NOV',
+    title: 'Chhath Puja',
+    sub: 'Festival Holiday',
+    tone: 'orange',
+  },
+];
 
 export const gallery = [
-  { label: 'Our Students', src: galleryStudents },
-  { label: 'Activity Based Learning', src: galleryActivity },
-  { label: 'Happy Moments', src: galleryMoments },
-  { label: 'Computer Class', src: galleryComputer },
-  { label: 'Creativity & Talent', src: galleryCreativity },
-  { label: 'Our Little Learners', src: galleryLearners },
+  {
+    label: 'Our Students in Classroom',
+    src: 'https://res.cloudinary.com/lyyvf2pr/image/upload/v1791793346/WhatsApp_Image_2026-10-12_at_12.27.26_AM.jpg',
+  },
+  {
+    label: 'Activity Based Learning Workshop',
+    src: 'https://res.cloudinary.com/lyyvf2pr/image/upload/v1791793342/WhatsApp_Image_2026-10-12_at_12.27.25_AM_1.jpg',
+  },
+  {
+    label: 'Creative Drawing & Art Talent',
+    src: 'https://res.cloudinary.com/lyyvf2pr/image/upload/v1791793342/WhatsApp_Image_2026-10-12_at_12.27.24_AM.jpg',
+  },
+  {
+    label: 'Cheerful Classroom Moments',
+    src: 'https://res.cloudinary.com/lyyvf2pr/image/upload/v1791793344/WhatsApp_Image_2026-10-12_at_12.27.25_AM.jpg',
+  },
+  {
+    label: 'Cultural Events & Celebrations',
+    src: 'https://res.cloudinary.com/lyyvf2pr/image/upload/v1791793341/WhatsApp_Image_2026-10-12_at_12.27.24_AM_1.jpg',
+  },
+  {
+    label: 'Our Curious Little Learners',
+    src: 'https://res.cloudinary.com/lyyvf2pr/image/upload/v1791793337/WhatsApp_Image_2026-10-12_at_12.27.22_AM.jpg',
+  },
 ];
 
 export const quickLinks = [

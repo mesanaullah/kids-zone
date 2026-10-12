@@ -29,7 +29,7 @@ export default function Gallery() {
                   alt={g.label}
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  className="h-full w-full object-cover object-top sm:object-center transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </div>
             </Link>
