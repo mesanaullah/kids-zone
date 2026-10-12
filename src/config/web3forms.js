@@ -1,9 +1,9 @@
 /**
  * Web3Forms Configuration
- * Key provided: eb48d953-dfbe-4798-9aa7-bceafcd926f6
+ * Key is loaded from environment variables (VITE_WEB3FORMS_ACCESS_KEY)
  */
 export const WEB3FORMS_ACCESS_KEY =
-  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'eb48d953-dfbe-4798-9aa7-bceafcd926f6';
+  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '';
 
 /**
  * Submit form data to Web3Forms API using standard FormData
